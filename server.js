@@ -19,6 +19,11 @@ mongoose.connection
 // create app object
 const app = express()
 
+//register my middleware
+app.use(morgan("dev"))
+app.use("/static", express.static("public"))
+app.use(express.urlencoded({extended: true}))
+app.use(methodOverride("_method"))
 
 // routes
 app.get("/", (req, res) => {
@@ -26,6 +31,7 @@ app.get("/", (req, res) => {
 })
 
 // turn on the server (the listener)
+
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
