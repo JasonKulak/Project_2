@@ -1,7 +1,7 @@
 # Seal Project 2
 
-- **Jason Kulak:**
-- **BSF (Breakfast Sandwich Finder):**
+- **Jason Kulak**
+- **BSF (Breakfast Sandwich Finder)**
 - **Description: This app will help you find great breakfast sandwiches no matter where you are in the U.S./World**
 - **Github URL: https://github.com/JasonKulak/Project_2**
 - **Deployed Website: https://jk-project-2.onrender.com/**
@@ -36,11 +36,11 @@ Below should be a table listing the different routes in your app and their purpo
 
 ##### Mobile Design
 
-![Mobile Design Mockup](https://imgur.com/RBo36RG)
+![Mobile Design Mockup](https://i.imgur.com/RBo36RG.jpg)
 
 ##### Desktop Design
 
-![Desktop Design Mockup](https://imgur.com/1CUhKFs)(https://imgur.com/xjQTHKO)
+![Desktop Design Mockup](https://i.imgur.com/xjQTHKO.jpg?1)
 
 ## ERD (Entity Relationship Diagram)
 
