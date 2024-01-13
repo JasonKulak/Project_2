@@ -11,7 +11,7 @@ const sandwichSchema = new.mongoose.Schema({
 }, {timestamps: true})
 
 //Sandwich model - interface with the database for Sandwiches
-const Animal = mongoose.model("Sandwich", sandwichSchema)
+const Sandwich = mongoose.model("Sandwich", sandwichSchema)
 
 //Export the Sandwich Model
 module.exports = Sandwich

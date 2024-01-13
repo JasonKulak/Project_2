@@ -5,11 +5,6 @@ const morgan = require("morgan")
 const methodOverride = require("method-override")
 
 
-// get .env variables
-const {DATABASE_URL, SECRET, PORT} = process.env
-
-
-
 
 
 // create app object
@@ -28,9 +23,6 @@ app.get("/", (req, res) => {
 
 //INDUCES
 //INDEX Route - GET
-app.get("/", async (req, res) => {
-    const sandwich = await
-})
 
 //NEW Route - GET
 
@@ -52,7 +44,7 @@ app.get("/", async (req, res) => {
 
 
 // turn on the server (the listener)
-
+const PORT = process.env.PORT || 4040
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
