@@ -3,18 +3,14 @@ require("dotenv").config()
 const express = require("express")
 const morgan = require("morgan")
 const methodOverride = require("method-override")
-const mongoose = require("mongoose")
+
 
 // get .env variables
 const {DATABASE_URL, SECRET, PORT} = process.env
 
-// database connection
-mongoose.connect(DATABASE_URL)
 
-mongoose.connection
-.on("open", () => console.log("Connected to Mongoose"))
-.on("close", () => console.log("Disconnected from Mongoose"))
-.on("error", (error) => console.log(error))
+
+
 
 // create app object
 const app = express()
@@ -29,6 +25,31 @@ app.use(methodOverride("_method"))
 app.get("/", (req, res) => {
     res.send("It's Working")
 })
+
+//INDUCES
+//INDEX Route - GET
+app.get("/", async (req, res) => {
+    const sandwich = await
+})
+
+//NEW Route - GET
+
+//DESTROY Route - DELETE
+
+//UPDATE Route - PUT
+
+//CREATE Route - POST
+
+//EDIT Route - GET
+
+//SHOW Route - GET
+
+
+
+
+
+
+
 
 // turn on the server (the listener)
 
