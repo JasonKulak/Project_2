@@ -3,6 +3,7 @@ require("dotenv").config()
 const express = require("express")
 const morgan = require("morgan")
 const methodOverride = require("method-override")
+const SandwichRouter = require("./controllers/sandwich")
 
 
 
@@ -18,8 +19,10 @@ app.use(methodOverride("_method"))
 
 // routes
 app.get("/", (req, res) => {
-    res.send("It's Working")
+    res.send("It's Working, Dude!")
 })
+
+app.use("/sandwich", SandwichRouter)
 
 //INDUCES
 //INDEX Route - GET

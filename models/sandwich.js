@@ -2,7 +2,7 @@ const mongoose = require("./connection")
 
 //SANDWICH SCHEMA
 
-const sandwichSchema = new.mongoose.Schema({
+const sandwichSchema = new mongoose.Schema({
     sandwichName: {type: String, required: true},
     available: Boolean,
     price: Number,
