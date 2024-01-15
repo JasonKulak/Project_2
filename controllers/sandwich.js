@@ -35,12 +35,23 @@ router.get("/", async (req, res) => {
 })
 
 //NEW Route - GET
+router.get("/new", (req, res) => {
+    res.render("sandwich/new.ejs")
+})
 
 //DESTROY Route - DELETE
 
 //UPDATE Route - PUT
 
 //CREATE Route - POST
+router.post("/", async (req, res) => {
+
+    req.body.available = Boolean(req.body.available)
+
+    await Sandwich.create(req.body).catch((error) => errorHandler(error, res))
+
+    res.redirect("/sandwich")
+})
 
 //EDIT Route - GET
 
