@@ -4,6 +4,7 @@ const mongoose = require("./connection")
 
 const sandwichSchema = new mongoose.Schema({
     sandwichName: {type: String, required: true},
+    description: String,
     available: Boolean,
     price: Number,
     restaurantName: String,

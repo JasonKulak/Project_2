@@ -24,20 +24,7 @@ app.get("/", (req, res) => {
 
 app.use("/sandwich", SandwichRouter)
 
-//INDUCES
-//INDEX Route - GET
 
-//NEW Route - GET
-
-//DESTROY Route - DELETE
-
-//UPDATE Route - PUT
-
-//CREATE Route - POST
-
-//EDIT Route - GET
-
-//SHOW Route - GET
 
 
 

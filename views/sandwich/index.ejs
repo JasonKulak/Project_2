@@ -1,0 +1,7 @@
+<h1>List of Sandwiches</h1>
+
+<% sandwiches.forEach((sandwich, index) => { %>
+
+    <a href="/sandwich/<%= sandwich._id %>"><h2><%= sandwich.sandwichName %></h2></a>
+
+<% }) %>
