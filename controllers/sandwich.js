@@ -40,6 +40,10 @@ router.get("/new", (req, res) => {
 })
 
 //DESTROY Route - DELETE
+router.delete("/:id", async (req, res) => {
+    await Sandwich.findByIdAndDelete(req.params.id)
+    res.redirect("/sandwich")
+})
 
 //UPDATE Route - PUT
 
