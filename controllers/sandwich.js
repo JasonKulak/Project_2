@@ -41,11 +41,17 @@ router.get("/new", (req, res) => {
 
 //DESTROY Route - DELETE
 router.delete("/:id", async (req, res) => {
-    await Sandwich.findByIdAndDelete(req.params.id)
+    await Sandwich.findByIdAndDelete(req.params.id).catch((error) => errorHandler(error, res))
     res.redirect("/sandwich")
 })
 
 //UPDATE Route - PUT
+router.put("/:id", async (req, res) => {
+    req.body.available = Boolean(req.body.available)
+
+    await Sandwich.findByIdAndUpdate(req.params.id, req.body)
+    res.redirect("/sandwich")
+})
 
 //CREATE Route - POST
 router.post("/", async (req, res) => {
@@ -58,6 +64,10 @@ router.post("/", async (req, res) => {
 })
 
 //EDIT Route - GET
+router.get("/:id/edit", async (req, res) => {
+    const sandwich = await Sandwich.findById(req.params.id).catch((error) => errorHandler(error, res))
+    res.render("sandwich/edit.ejs", {sandwich})
+})
 
 //SHOW Route - GET
 router.get("/:id", async (req, res) => {
