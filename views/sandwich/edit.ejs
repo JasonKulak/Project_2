@@ -1,8 +1,9 @@
 <h1>Update <%= sandwich.sandwichName %></h1>
 
 <form action="/sandwich/<%= sandwich._id %>?_method=PUT" method="post">
+    <input type="text" name="img" placeholder="image" value="<%= sandwich.img %>">
     <input type="text" name="sandwichName" placeholder="sandwich" value="<%= sandwich.sandwichName %>">
-    <!-- <input type="text" name="description" placeholder="description of sandwich"> -->
+    <input type="text" name="description" placeholder="description of sandwich" value="<%= sandwich.description %>"> 
     <input type="checkbox" name="available" <%= sandwich.available ? "checked" : "" %>>
     <input type="text" name="price" placeholder="cost" value="<%= sandwich.price %>">
     <input type="text" name="restaurantName" placeholder="name of restaurant" value="<%= sandwich.restaurantName %>">

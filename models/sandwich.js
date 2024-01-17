@@ -3,8 +3,9 @@ const mongoose = require("./connection")
 //SANDWICH SCHEMA
 
 const sandwichSchema = new mongoose.Schema({
+    img: String, 
     sandwichName: {type: String, required: true},
-    // description: String,
+    description: String,
     available: Boolean,
     price: Number,
     restaurantName: String,

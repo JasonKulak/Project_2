@@ -1,9 +1,11 @@
-<h1>List of Sandwiches</h1>
+<body>
+    <h1>World Brunches!!!</h1>
 
-<% sandwiches.forEach((sandwich, index) => { %>
+    <% sandwiches.forEach((sandwich, index) => { %>
 
-    <a href="/sandwich/<%= sandwich._id %>"><h2><%= sandwich.sandwichName %></h2></a>
+        <a href="/sandwich/<%= sandwich._id %>"><h2><%= sandwich.sandwichName %></h2></a>
 
-<% }) %>
+    <% }) %>
 
-<a href="/sandwich/new"><button>ADD A SAMMIE</button></a>
+    <a href="/sandwich/new"><button>ADD SOME BRUNCH</button></a>
+</body>`    
