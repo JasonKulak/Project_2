@@ -16,8 +16,8 @@ border: 2px;
 
 .menu-items {
     text-align: center;
-    margin-top: 10%;
-    padding-top: 10%;
+    margin-top: 2px;
+    padding-top: 2px%;
 }
 
 .sandwich-names {
@@ -27,13 +27,12 @@ border: 2px;
 }
 
 .button {
-    transition: left .4s;
-    padding-top: 25%;
+    padding-top: 15%;
+    border: absolute;
 }
 
 .btn {
     border: 2px solid black;
-    
 }
 
 .show-page {

@@ -17,16 +17,22 @@
              <h3>PRICE: <%= sandwich.price %></h3>
              <h4>Available at: <%= sandwich.restaurantName %> - <%= sandwich.location %></h4>
         </div>
-        <div class="show-delete-button">
+        <div>
             <form action="/sandwich/<%= sandwich._id %>?_method=DELETE" method="post">
                 <input type="submit" value="delete">
             </form>
         </div>
-        <div class="show-update-button">
-            <a href="/sandwich/<%= sandwich._id %>/edit"><button>Update</button></a>
+        <div>
+            <a href="/sandwich/<%= sandwich._id %>/edit">
+                <button class="show-update-button">Update</button>
+            </a>
         </div>
-        <div class="show-back-button">
-            <a href="/sandwich"><button><h5>BACK TO BRUNCH LIST</h5></button></a>
+        <div>
+            <a href="/sandwich">
+                <button class="show-back-button">
+                    <h5>BACK TO BRUNCH LIST</h5>
+                </button>
+            </a>
         </div>
 </body>
 </html>
