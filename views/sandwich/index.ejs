@@ -1,11 +1,31 @@
-<body>
-    <h1>World Brunches!!!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="page">
+    <div class="title">
+        <h1>World Brunches!!!</h1>
+    </div>
+    <div class="menu-items">
+        <% sandwiches.forEach((sandwich, index) => { %>
+            <a href="/sandwich/<%= sandwich._id %>">
+                <div class="sandwich-names">
+                    <h2><%= sandwich.sandwichName %></h2>
+                </div>
+            </a>
+        <% }) %>
+    </div>
+    <div class="button" >
+        <a href="/sandwich/new">
+            <div class="btn">
+                <button>ADD SOME BRUNCH</button>
+            </div>
+        </a>
+    </div>
+</body>
 
-    <% sandwiches.forEach((sandwich, index) => { %>
-
-        <a href="/sandwich/<%= sandwich._id %>"><h2><%= sandwich.sandwichName %></h2></a>
-
-    <% }) %>
-
-    <a href="/sandwich/new"><button>ADD SOME BRUNCH</button></a>
-</body>`    
+</html>

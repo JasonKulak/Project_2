@@ -1,19 +1,32 @@
-<img src="<%= sandwich.img %>" />
-
-<h1><%= sandwich.sandwichName %></h1>
-
-<h4><%= sandwich.description %></h4>
-
-<h2>In Stock: <%= sandwich.available ? "YES" : "NO" %></h2>
-
-<h3>PRICE: <%= sandwich.price %></h3>
-
-<h4>Available at: <%= sandwich.restaurantName %> - <%= sandwich.location %></h4>
-
-<form action="/sandwich/<%= sandwich._id %>?_method=DELETE" method="post">
-    <input type="submit" value="delete">
-</form>
-
-<a href="/sandwich/<%= sandwich._id %>/edit"><button>Update</button></a>
-
-<a href="/sandwich"><button><h5>BACK TO BRUNCH LIST</h5></button></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="show-page">
+    <img src="<%= sandwich.img %>" />
+        <div class="show-name">
+             <h1><%= sandwich.sandwichName %></h1>
+             <div class="show-description">
+                <h4><%= sandwich.description %></h4>
+            </div>
+             <h2>In Stock: <%= sandwich.available ? "YES" : "NO" %></h2>
+             <h3>PRICE: <%= sandwich.price %></h3>
+             <h4>Available at: <%= sandwich.restaurantName %> - <%= sandwich.location %></h4>
+        </div>
+        <div class="show-delete-button">
+            <form action="/sandwich/<%= sandwich._id %>?_method=DELETE" method="post">
+                <input type="submit" value="delete">
+            </form>
+        </div>
+        <div class="show-update-button">
+            <a href="/sandwich/<%= sandwich._id %>/edit"><button>Update</button></a>
+        </div>
+        <div class="show-back-button">
+            <a href="/sandwich"><button><h5>BACK TO BRUNCH LIST</h5></button></a>
+        </div>
+</body>
+</html>

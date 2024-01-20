@@ -1,0 +1,86 @@
+* {
+border: 2px;
+
+/* background-image: url(https://img.freepik.com/free-photo/top-close-up-view-vegetables-tomatoes-with-pedicels-garlic-bell-peppers-lemon-oil-onion_140725-72203.jpg);  */
+}
+
+.page {
+    background-color: yellow;
+}
+
+.title {
+    color: green;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu-items {
+    text-align: center;
+    margin-top: 10%;
+    padding-top: 10%;
+}
+
+.sandwich-names {
+    font-family: monospace;
+    padding: 0px;
+    color: red;
+}
+
+.button {
+    transition: left .4s;
+    padding-top: 25%;
+}
+
+.btn {
+    border: 2px solid black;
+    
+}
+
+.show-page {
+    background-color: lightblue;
+}
+
+.show-name {
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+}
+
+.show-description {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    margin-left: 5%;
+}
+
+.show-delete-button {
+    border: 2px solid black;
+}
+
+.show-update-button {
+    border: 2px solid black;
+}
+
+.show-back-button {
+    border: 2px solid black;
+}
+
+.edit-page {
+    background-color: lightseagreen;
+}
+
+.edit-title {
+    font-family: monospace;
+}
+
+input {
+    border: 2px solid black;
+}
+
+.new-page {
+    background-color: rgb(255, 0, 162);
+}
+
+.add-meal {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellow;
+}

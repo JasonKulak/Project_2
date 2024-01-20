@@ -1,11 +1,25 @@
-<h1>Add a sandwich</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="new-page">
+    <div class="add-meal">
+        <h1>Add a meal</h1>
+    </div>
+    <form action="/sandwich" method="post">
+        <input type="text" name="sandwichName" placeholder="sandwich">
+        <!-- <input type="text" name="description" placeholder="description of sandwich"> -->
+        <input type="checkbox" name="available">
+        <input type="text" name="price" placeholder="cost">
+        <input type="text" name="restaurantName" placeholder="name of restaurant">
+        <input type="text" name="location" placeholder="city & state">
+        <input type="submit" value="ADD A SAMMIE">
+    </form>    
+    <a href="/sandwich"><button><h5>BACK TO BRUNCH LIST</h5></button></a>
+</body>
+</html>
 
-<form action="/sandwich" method="post">
-    <input type="text" name="sandwichName" placeholder="sandwich">
-    <!-- <input type="text" name="description" placeholder="description of sandwich"> -->
-    <input type="checkbox" name="available">
-    <input type="text" name="price" placeholder="cost">
-    <input type="text" name="restaurantName" placeholder="name of restaurant">
-    <input type="text" name="location" placeholder="city & state">
-    <input type="submit" value="ADD A SAMMIE">
-</form>

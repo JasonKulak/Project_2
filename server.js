@@ -19,9 +19,12 @@ app.use(methodOverride("_method"))
 
 // routes
 app.get("/", (req, res) => {
+
+    // This is what we get when we visit the site
     res.send("It's Working, Dude!")
 })
 
+//in order to access the sandwich folder we need to access the views folder which is controlled by the router in the controllers folder. BUT FIRST, we must have "/sandwich" in our URL to access the router for the user to use the router
 app.use("/sandwich", SandwichRouter)
 
 
